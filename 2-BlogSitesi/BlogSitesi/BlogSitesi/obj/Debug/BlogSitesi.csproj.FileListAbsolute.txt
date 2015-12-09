@@ -1,0 +1,6 @@
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\bin\BlogSitesi.dll
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\bin\BlogSitesi.pdb
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\obj\Debug\BlogSitesi.dll
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\obj\Debug\BlogSitesi.pdb
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\bin\CKEditor.NET.pdb
+E:\4-Ez\projelerim\0-TAM\2-BlogSitesi\BlogSitesi\BlogSitesi\obj\Debug\BlogSitesi.csprojResolveAssemblyReference.cache

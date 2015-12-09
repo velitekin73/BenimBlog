@@ -1,0 +1,89 @@
+﻿body {
+    background-color:#e1e1e1;
+}
+* {/* adını * yaptık ve hepsinde kullanacağız*/
+   /*ve boşlukları sıfırlayacak*/
+    margin:0;/*dıştan boşluk*/
+    padding:0;/*içten boşluk*/
+    border:0;/*kenarlık kalınlıklarıda sıfırlanacak*/
+}
+a {/*a yani altı çizili olanlar yani linkler için */
+   text-decoration:none;/*alt çizili olmayacak*/
+   color:#2a595c;/*rengide mavi değilde bizim kullandığımız reng olacak yani rengin değiştiği anlaşılmayacak*/
+}
+    a:hover {/*peki üzerine gelince ne olsun*/
+             color:#589296;/*hafif açtık*/
+    }
+.butonGorsel {/*Kategorilerdeki Ekle butonun css si*/
+              background-color:#2a595c;
+              width:100px;
+              height:25px;
+              color:#fff;
+}
+    .butonGorsel:hover {/*Butonun uzrune gidince neler olacak*/
+                        background-color:rgba(42, 89, 92, 0.70);/*opacity i azalttık*/
+    }
+.textboxGorsel {/*KAtegorilerdeki txtboxlar için görsel*/
+                width:150px;
+                height:25px;
+                border:1px dotted #2a595c;
+}
+.dropdownlistGorsel {/*makalelerdeki dropdownlist için*/
+                     height:25px;
+                     width:auto;
+                     border: 1px dotted #2a595c;
+}
+.kutu {/*hepsinin sığacağı bir kutu yaptık*/
+       width:1000px;/*genişlik*/
+       height:1000px;
+       margin:0 auto;/*marging 0 auto verince 1000 px lin fazlasını ortalayacaktır*/
+
+}
+    .kutu .slider {
+        width:1000px;
+        height:100px;
+        float:left;/*slider en soldan başlayacak sola yaslayacak*/
+        background-color:#2a595c;/*sliderin arkaplan rengini verdik*/
+
+    }
+
+    .kutu .govde {
+        width:1000px;
+        height:auto;
+        float:left;
+        margin-top:20px;
+    }
+        .kutu .govde .govdesol {/*gövde iki parçadan oluşuyor sol kısmına(kategoriler) sol sağ kısmına(içerik) sağ dedik*/
+            width:270px;
+            height:auto;
+            float:left;
+        }
+            .kutu .govde .govdesol .govdesolbaslik {
+                width:100%;
+                height:30px;
+                float:left;
+                background-color:#2a595c;
+                border:1px dotted #2a595c;
+                color:#ffffff;/*yazının rengini beyaz yaptık*/
+                line-height:30px;/*yazıyı ortaladık yükseklik kadar verince ortalanır*/
+
+            }
+            .kutu .govde .govdesol .govdesolicerik {
+                width:100%;
+                height:auto;
+                float:left;
+                border:1px dotted #2a595c;
+            }
+        .kutu .govde .govdesag {
+            width:700px;
+            height:auto;
+            float:right;
+            border:1px dotted #2a595c;/*kalınlık verdik 1px ve noktalı olsun dedik ve rengini de verdik*/
+        }
+    .kutu .altmenu {
+        width:100%;
+        height:40px;
+        float:left;
+        background-color:#2a595c;
+        margin-top:20px;/*dıştan ve yukardan boşluk verdik*/
+    }

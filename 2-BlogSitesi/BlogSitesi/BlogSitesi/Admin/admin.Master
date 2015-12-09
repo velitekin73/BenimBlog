@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="BlogSitesi.Admin.admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="SHORTCUT ICON" href="tema/icon.ico" />
+    <style type="text/css">
+        .kategoriler {
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="kutu">
+            <div class="slider"></div>
+            <div class="govde">
+                <div class="govdesol">
+                    <div class="govdesolbaslik">&nbsp; MENÜLER</div>
+                    <div class="govdesolicerik">
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; background-image: url(../Temalar/menuarkaplan.png); background-repeat: repeat-x;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="duyurular.aspx">-Duyurular</a></div>
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; background-image: url(../Temalar/menuarkaplan.png); background-repeat: repeat-x;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="kategoriler.aspx">-Kategoriler</a></div>
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; background-image: url(../Temalar/menuarkaplan.png); background-repeat: repeat-x;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="makaleler.aspx">-Makaleler</a></div>
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; background-image: url(../Temalar/menuarkaplan.png); background-repeat: repeat-x;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="yorumlar.aspx">-Yorumlar</a></div>
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; background-image: url(../Temalar/menuarkaplan.png); background-repeat: repeat-x;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="mesajlar.aspx">-Mesajlar</a></div>
+                        <div style="height: 25px; color: #2a595c; font-weight: bolder; margin-top: 2px; float:right;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="default.aspx">Çıkış</a></div>
+                    </div>
+                </div>
+                <div class="govdesag">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <%--<div class="altmenu"></div> --%>  
+        </div>
+    </form>
+</body>
+</html>

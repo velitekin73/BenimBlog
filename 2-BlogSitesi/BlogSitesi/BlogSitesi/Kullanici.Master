@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="BlogSitesi.Kullanici" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Blog| Veli TEKİN</title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="SliderJS/jquery.js"></script>
+    <script src="SliderJS/amazingslider.js"></script>
+    <script src="SliderJS/initslider-1.js"></script>
+    <link rel="SHORTCUT ICON" href="Temalar/icon.ico" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 220px;
+        }
+        .auto-style3 {
+            height: 21px;
+        }
+        .text {
+            width:200px;
+            height:24px;
+            border:1px dotted #658A8D;
+            float:right;
+            padding-left:3px;
+        }
+        .btn {
+            float:right;
+            background-image: url('Temalar/altmenu.png');
+            width:80px;
+            height:25px;
+            color:#fff;
+            border:1px dotted #658A8D;
+        }
+        .auto-style4 {
+            width: 230px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="kutu">
+        <div class="slider">
+      <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:600px;margin:16px auto 48px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <asp:DataList ID="dlSliderResim" runat="server">
+                    <ItemTemplate>
+                        <li><a href="MakaleDetay.aspx?MakaleId=<%#Eval("MakaleId") %>"><img src="<%#Eval("MakaleResim") %>" alt="<%#Eval("MakaleBaslik") %>" /></a></li>
+                    </ItemTemplate>
+                </asp:DataList>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+              
+            </ul>
+            <div class="amazingslider-thumbnails" style="display:none;"><a href="http://amazingslider.com">JavaScript Slider</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="ustmenu">
+            <a href="Default.aspx" class="butonGorsel" style="color: #2a595c"><div style="width: 269px; height: 40px; border-right-style: dotted; border-right-width: 1px; border-right-color: #e1e1e1; float: left; color: #fff; font-size: 24px; text-align: center; line-height: 40px">
+
+                Blog | Veli TEKİN</div></a>
+            <div style="width: 700px; height: 40px; float: right">
+                <a href="Default.aspx"><div class="ustmenubuton">Bloğum</div></a>
+                <a href="Hakkimda.aspx"><div class="ustmenubuton">Hakkımda</div></a>
+                <a href="Galeri.aspx"><div class="ustmenubuton">Galeri</div></a>
+                <a href="Iletisim.aspx"><div class="ustmenubuton">İletişim</div></a>
+            </div>
+        </div>
+        <div style="height:auto;width:100%;float:left;">
+            <div style="height:25px;width:338px; float:right;">
+                <asp:Button ID="btnAra" runat="server" CssClass="btn" Text="Ara" OnClick="btnAra_Click" />
+                <asp:TextBox ID="txtAra" placeHolder="Makale Ara" runat="server" CssClass="text" ></asp:TextBox>
+                
+            </div>
+        </div>
+        <div class="govde">
+            <div class="govdesol">
+                <div class="govdesolbaslik">&nbsp;Duyurular</div>
+                <div class="govdesolicerik">
+                    <asp:DataList ID="dlDuyuru" runat="server" Width="100%">
+                        <ItemTemplate>
+                            <table class="auto-style1" style="background-color: #F3F3F3">
+                                <tr>
+                                    <td style="width: 30px">
+                                        <asp:Image ID="Image1" runat="server" Height="30px" ImageUrl='<%# Eval("DuyuruResim") %>' Width="30px" />
+                                    </td>
+                                    <td style="text-align: left; padding-left: 3px;" class="auto-style4">
+                                        <asp:Label ID="Label1" runat="server" ForeColor="#333333" Text='<%# Eval("DuyuruBaslik") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="auto-style3" style="padding-left: 5px">
+                                        <asp:Label ID="Label2" runat="server" ForeColor="#666666" Text='<%# Eval("DuyuruIcerik") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="text-align: right; font-size: small; border-bottom-color: #999999; border-bottom-width: 1px; border-bottom-style: solid;">
+                                        <asp:Label ID="Label3" runat="server" ForeColor="Gray" Text='<%# Eval("DuyuruTarih","{0:dd MMMM yyyy}") %>'></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
+                <div style="height:30px;float:left;width:100%;"></div>
+                <div class="govdesolbaslik">&nbsp;Kategoriler</div>
+                <div class="govdesolicerik">
+                    <asp:DataList ID="dlKategori" runat="server" Width="100%">
+                        <ItemTemplate>
+                            <table class="auto-style1" style="background-color: #F3F3F3">
+                                <tr>
+                                    <td style="width: 30px">
+                                        <asp:Image ID="Image2" runat="server" Height="40px" ImageUrl='<%# Eval("KategoriResim") %>' Width="40px" />
+                                    </td>
+                                    <td style="width: 220px; color: #666666;" class="auto-style2">
+                                       <a href="kategoriDetay.aspx?KategoriId=<%#Eval("KategoriId") %>"> <asp:Label ID="Label4" runat="server" ForeColor="#666666" Text='<%# Eval("KategoriAdi") %>'></asp:Label></a>
+                                        &nbsp;(<asp:Label ID="Label5" runat="server" ForeColor="#333333" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                                        )</td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
+            </div>
+            <div class="govdesag">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+            </div>
+            <div class="altmenu">Veli TEKİN - 2015</div>      
+    </div>
+    </form>
+</body>
+</html>
