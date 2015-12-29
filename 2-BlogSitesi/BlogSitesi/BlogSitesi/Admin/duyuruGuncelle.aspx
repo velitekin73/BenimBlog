@@ -17,20 +17,20 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2" style="text-align: right">Başlık</td>
+            <td class="auto-style2" style="text-align: right">Başlık yaz</td>
             <td>
                 <asp:TextBox ID="txtDuyuruBaslik" runat="server" CssClass="textboxGorsel" Width="420px"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="auto-style2" style="text-align: right">İçerik:</td>
+            <td class="auto-style2" style="text-align: right">İçerik yaz:</td>
             <td>
                  <CKEditor:CKEditorControl ID="ckDuyuruIcerik" BasePath="/ckeditor/" runat="server" Width="420px" ></CKEditor:CKEditorControl> </td>
         </tr>
         <tr>
             <td class="auto-style2" style="text-align: right">&nbsp;</td>
             <td>
-                <asp:Button ID="btnDuyuruGuncelle" runat="server" CssClass="butonGorsel" Text="Güncelle" OnClick="btnDuyuruGuncelle_Click" />
+                <asp:Button ID="btnDuyuruGuncelle" runat="server" CssClass="butonGorsel" Text="Update" OnClick="btnDuyuruGuncelle_Click" />
             </td>
         </tr>
         <tr>
