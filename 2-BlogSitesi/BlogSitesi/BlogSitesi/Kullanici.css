@@ -14,8 +14,9 @@ a { /*kategorilerderki link verdiklerimizi düzenleyeceğiz*/
 }
 
     a:hover { /*üzerine gelince de kalınlaşsın*/
-        font-weight: bolder;
+        font-weight: bold;
     }
+    
 
 .butonGorsel { /*Kategorilerdeki Ekle butonun css si*/
     background-image: url('Temalar/altmenu.png');
