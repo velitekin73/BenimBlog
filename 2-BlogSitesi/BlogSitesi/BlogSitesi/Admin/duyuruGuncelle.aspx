@@ -23,7 +23,7 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2" style="text-align: right">İçerik yaz:</td>
+            <td class="auto-style2" style="text-align: right">İçerik Yaz:</td>
             <td>
                  <CKEditor:CKEditorControl ID="ckDuyuruIcerik" BasePath="/ckeditor/" runat="server" Width="420px" ></CKEditor:CKEditorControl> </td>
         </tr>
