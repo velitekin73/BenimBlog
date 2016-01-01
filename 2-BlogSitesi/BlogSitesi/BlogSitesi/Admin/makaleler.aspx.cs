@@ -79,7 +79,7 @@ namespace BlogSitesi.Admin
             }
             else
             {
-                btnMakaleEkle.Text = "Resim Ekle !!!";
+                btnMakaleEkle.Text = "Resim Ekle!!!";
             }
         }
 
@@ -113,7 +113,7 @@ namespace BlogSitesi.Admin
             }
             else
             {
-                btnMakaleDosyaEkle.Text = "Dosya Ekle !!!";
+                btnMakaleDosyaEkle.Text = "Dosya Ekle!!!";
             }
         }
 
