@@ -11,7 +11,7 @@
             width: 24px;
         }
         .auto-style6 {
-            width: 24px;
+            width: 30px;
             height: 24px;
         }
         .auto-style7 {
